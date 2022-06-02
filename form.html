@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 18px;
+        }
+        form {
+            font-size: 18px;
+        }
+        p span{
+            font-size: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <img src="https://www.digitalhearts.com/wp-content/uploads/logo_DIGITAL_HEARTS-1.svg"
+     width="600px" height="200px">
+    <h1>お問い合わせページ</h1>
+    <p>お問い合わせ内容を入力してください。<span>(*)は必須のフォームです。</span></p>
+  <form>
+    <label style="padding:15px;"for="contact-type-select">お問い合わせ種別(*)</label>
+    <select name="contact-type" id="contact-type-select">
+        <option value="">お問い合わせ種別を選んでください</option>
+        <option value="service">サービスの詳細を知りたい</option>
+        <option value="other">その他</option>
+        </select>
+  </form>
+    <br>
+    <label style="padding:15px;">お問い合わせ内容(*)</label><br>
+    <textarea id="textarea_text" rows="3" cols="30"></textarea>
+
+    <p>お客様情報を入力してください </p>
+    
+    <div class="customer-area">
+        <label style="padding:15px;">氏名(*)</label>
+        <input type="name" />
+    </div>
+    <br>
+    <div class="customer-area">
+        <label style="padding:15px;">メールアドレス</label>
+        <input type="email" />
+    </div>
+    <br>
+    <form>
+        <label>
+            個人情報の取り扱いへの同意(*)
+          <input
+            type="checkbox"
+            name="terms"
+            value="accept"
+            required
+            >
+             </label>
+             <br>
+             <br>
+        <button>送信</button>
+      </form>
+</body>
+</html>
